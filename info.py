@@ -15,8 +15,8 @@ def is_enabled(value, default):
 
 
 SESSION = environ.get('SESSION', 'media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '25625749'))
+API_HASH = environ.get('API_HASH', '1b4a47426f1189e4c406057be9735e3b')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -31,16 +31,16 @@ FSUB_IMG = (environ.get('FSUB_IMG', 'https://i.ibb.co/cShkPjcZ/x.jpg')).split()
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]  #Admin Id
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-100').split()] #Movie Database Channel Id
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-100'))  #Log Channel Id
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-100'))  #Streming Log Channel Id
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-100'))  #Movie Update Channel Id
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-100')) #Premium Subscription Log Channel Id
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-100') #Movie Request Channel Id
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002650947966'))  #Log Channel Id
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002650947966'))  #Streming Log Channel Id
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002001862509'))  #Movie Update Channel Id
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002650947966')) #Premium Subscription Log Channel Id
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002650947966') #Movie Request Channel Id
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-100') #Support Chat Id
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
-DATABASE_URI = environ.get('DATABASE_URI', "") #MongoDB Url
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://necojeg760:PM06yWQkVPKN6xZT@cluster0.0xziheq.mongodb.net/?retryWrites=true&w=majority") #MongoDB Url
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'SilentXBotz_files')
 
@@ -51,15 +51,15 @@ DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/')
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/')
-UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/')
+UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/Backup2213k')
 
 #Force Subscription Channel (Put Same Channel Id In Both Veriables)
 AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-100')) 
 AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-100'))
 
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-100')) #Verification Channel Id 
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-100')) #If Anyone Set Your Bot In Any Group And Set Shortner In That Group Then In This Channel The All Details Come
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002001862509')) #Verification Channel Id 
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002001862509')) #If Anyone Set Your Bot In Any Group And Set Shortner In That Group Then In This Channel The All Details Come
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/9ecc5d6e4df5b83424896.jpg")
 
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/")
